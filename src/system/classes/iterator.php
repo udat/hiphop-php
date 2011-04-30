@@ -327,7 +327,7 @@ class ArrayIterator implements ArrayAccess, SeekableIterator, Countable {
   protected $arr;
   protected $flags;
 
-  public function __construct($array, $flags = 0) {
+  public function __construct($array = array(), $flags = 0) {
     $this->arr = $array;
     $this->flags = $flags;
     reset($this->arr);
